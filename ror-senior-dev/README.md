@@ -94,6 +94,11 @@ ESBCN - Barcelona
 
 BRSSZ - Santos
 
+Shipment Leg: A "shipment leg" refers to each segment of a shipment's journey
+between two specific locations, such as from one port to another. For example,
+if a shipment travels from Shanghai to Rotterdam with a stopover in Barcelona,
+the journey consists of two legs: Shanghai to Barcelona and Barcelona to
+Rotterdam.
 
 #### We are here to help
 
