@@ -6,9 +6,9 @@ Have we told you we want to be the biggest freight forwarder company in the worl
 
 The good news is the team MapReduce (yeah, they choose this name) already created a service that aggregates lots of information and returns a JSON file for us. This MapReduce service returns all shipping options available in the database. We have given you a sample JSON response from MapReduce service.
 
-Your job is to create a small service that does some calculations using the JSON file. 
+Your job is to create a small service that does some calculations using the JSON file.
 
-Exchange rates in the JSON file are based on EUR (For example 2022-01-29 usd rate 1.1138 is USD/EUR rate). We decide which exchange_rate will be used to calculate EUR sailing rate based on the *departure_date* of the sailing. Use sailing_code from sailing & rate to get the rate amount & currency. 
+Exchange rates in the JSON file are based on EUR (For example 2022-01-29 usd rate 1.1138 is USD/EUR rate). We decide which exchange_rate will be used to calculate EUR sailing rate based on the *departure_date* of the sailing. Use sailing_code from sailing & rate to get the rate amount & currency.
 
 Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to have feature. So it is a bonus task & you can finish it if you have time.
 
@@ -16,7 +16,7 @@ Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to ha
 
 
 ```json
-[ 
+[
   {
     "origin_port": "CNSHA",
     "destination_port": "NLRTM",
@@ -32,7 +32,7 @@ Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to ha
 #### (2) WRT-0002 - *Acceptance criteria*: Return the cheapest sailing (direct or indirect). If the cheapest one contains more than one sailing (two sailings) in the following format, you should return all sailing legs (You need to compare the sum of all sailing legs to find the cheapest sailing option). Use same CNSHA as origin port & NLRTM as destination port input parameters
 
 ```json
-[ 
+[
   {
     "origin_port": "CNSHA",
     "destination_port": "ESBCN",
@@ -54,11 +54,11 @@ Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to ha
 ]
 ```
 
-#### (3) (Bonus task) TST-0003 - *Acceptance criteria*: Return the fastest sailing legs (direct or indirect) in the same above format
+#### (3) TST-0003 - *Acceptance criteria*: Return the fastest sailing legs (direct or indirect) in the same above format
 
 As those are small changes, we can create one branch for all the changes.
 
-You should provide a solution that make possible to scale because new requirements will come soon. 
+You should provide a solution that make possible to scale because new requirements will come soon.
 
 4. SLD-0004 - coming soon
 5. DRY-0005 - coming soon
@@ -67,8 +67,8 @@ You should provide a solution that make possible to scale because new requiremen
 We will evaluate the solution with some criteria:
 
 1. Object Oriented Concepts
-2. SOLID 
-3. DRY 
+2. SOLID
+3. DRY
 4. Test Coverage
 
 #### Lingo
