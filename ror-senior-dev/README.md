@@ -1,16 +1,29 @@
 ## Background
 
-Shypple is a freight forwarder company. That means we help other companies to get their products from one place to another. We must deliver the goods as fast as possible. To achieve that, we need to replace some human labor with automation. We have part of the process being done via Excel and that is not good to scale.
+Shypple is a freight forwarder company. That means we help other companies to
+get their products from one place to another. We must deliver the goods as fast
+as possible. To achieve that, we need to replace some human labor with
+automation. We have part of the process being done via Excel and that is not
+good to scale.
 
-Have we told you we want to be the biggest freight forwarder company in the world?
+Have we told you we want to be the biggest freight forwarder company in the
+world?
 
-The good news is the team MapReduce (yeah, they choose this name) already created a service that aggregates lots of information and returns a JSON file for us. This MapReduce service returns all shipping options available in the database. We have given you a sample JSON response from MapReduce service.
+The good news is the team MapReduce (yeah, they choose this name) already
+created a service that aggregates lots of information and returns a JSON file
+for us. This MapReduce service returns all shipping options available in the
+database. We have given you a sample JSON response from MapReduce service.
 
-Your job is to create a small service that does some calculations using the JSON file.
+Your job is to create a small service that does some calculations using the
+JSON file.
 
-Exchange rates in the JSON file are based on EUR (For example 2022-01-29 usd rate 1.1138 is USD/EUR rate). We decide which exchange_rate will be used to calculate EUR sailing rate based on the *departure_date* of the sailing. Use sailing_code from sailing & rate to get the rate amount & currency.
+Exchange rates in the JSON file are based on EUR (For example 2022-01-29 usd
+rate 1.1138 is USD/EUR rate). We decide which exchange_rate will be used to
+calculate EUR sailing rate based on the *departure_date* of the sailing. Use
+sailing_code from sailing & rate to get the rate amount & currency.
 
-Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to have feature. So it is a bonus task & you can finish it if you have time.
+Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to
+have feature. So it is a bonus task & you can finish it if you have time.
 
 #### (1) PLS-0001 - *Acceptance criteria*: Return the cheapest direct sailing between origin port & destination port in following format. For example using CNSHA as origin port & NLRTM as destination port input parameters
 
@@ -80,3 +93,13 @@ NLRTM - Rotterdam
 ESBCN - Barcelona
 
 BRSSZ - Santos
+
+
+#### We are here to help
+
+Feel free to reach out to us with any questions or concerns you may have. We're
+here to help and are more than happy to provide any clarification needed.
+
+Good luck!
+
+:q!
