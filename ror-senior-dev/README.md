@@ -25,18 +25,52 @@ sailing_code from sailing & rate to get the rate amount & currency.
 Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to
 have feature. So it is a bonus task & you can finish it if you have time.
 
-#### (1) PLS-0001 - *Acceptance criteria*: Return the cheapest direct sailing between origin port & destination port in following format. For example using CNSHA as origin port & NLRTM as destination port input parameters
+The solution should include all configuration files needed to build and run in
+a Docker container (don't expect anything else but Docker to be installed).
 
+### Input/Output Specification
+1. The first line is the origin_port code
+2. The second line is the destination_port code
+3. The third line is the criteria (cheapest-direct, cheapest, fastest)
+5. The next lines you should print the result
 
+#### Input
+```json
+CNSHA
+NLRTM
+cheapest-direct
+```
+
+#### Output
 ```json
 [
   {
     "origin_port": "CNSHA",
     "destination_port": "NLRTM",
-    "departure_date": "2022-02-01",
-    "arrival_date": "2022-03-01",
-    "sailing_code": "ABCD",
-    "rate": "589.30",
+    "departure_date": "2024-02-01",
+    "arrival_date": "2024-03-01",
+    "sailing_code": "XXXX",
+    "rate": "123.00",
+    "rate_currency": "USD"
+  }
+]
+```
+
+#### (1) PLS-0001 - *Acceptance criteria*: Return the cheapest direct sailing between origin port & destination port in following format. For example using CNSHA as origin port & NLRTM as destination port input parameters
+
+
+```json
+CNSHA
+NLRTM
+cheapest-direct
+[
+  {
+    "origin_port": "CNSHA",
+    "destination_port": "NLRTM",
+    "departure_date": "2024-02-01",
+    "arrival_date": "2024-03-01",
+    "sailing_code": "XXXX",
+    "rate": "232.30",
     "rate_currency": "USD"
   }
 ]
@@ -44,6 +78,14 @@ have feature. So it is a bonus task & you can finish it if you have time.
 
 #### (2) WRT-0002 - *Acceptance criteria*: Return the cheapest sailing (direct or indirect). If the cheapest one contains more than one sailing (two sailings) in the following format, you should return all sailing legs (You need to compare the sum of all sailing legs to find the cheapest sailing option). Use same CNSHA as origin port & NLRTM as destination port input parameters
 
+#### Input
+```json
+CNSHA
+NLRTM
+cheapest
+```
+
+#### Output
 ```json
 [
   {
@@ -69,7 +111,43 @@ have feature. So it is a bonus task & you can finish it if you have time.
 
 #### (3) TST-0003 - *Acceptance criteria*: Return the fastest sailing legs (direct or indirect) in the same above format
 
-As those are small changes, we can create one branch for all the changes.
+#### Input
+```json
+CNSHA
+NLRTM
+fastest
+```
+
+#### Output
+```json
+[
+  {
+    "origin_port": "CNSHA",
+    "destination_port": "ESBCN",
+    "departure_date": "2022-01-29",
+    "arrival_date": "2022-02-06",
+    "sailing_code": "ERXQ",
+    "rate": "261.96",
+    "rate_currency": "EUR"
+  },
+  {
+    "origin_port": "ESBCN",
+    "destination_port": "NLRTM",
+    "departure_date": "2022-02-16",
+    "arrival_date": "2022-02-20",
+    "sailing_code": "ETRG",
+    "rate": "69.96",
+    "rate_currency": "USD"
+  }
+]
+```
+
+### Project Requirements
+
+1. Please, create one single branch for all the changes.
+2. Make sure your app run on docker and all the dependencies are included on it
+3. Create a private project and invite "joassouza", "yamanaltereh" once you're done
+4. The solution must work with standard input and output (stdin and stdout).
 
 You should provide a solution that make possible to scale because new requirements will come soon.
 
