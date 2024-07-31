@@ -146,7 +146,7 @@ fastest
 
 1. Please, create one single branch for all the changes.
 2. Make sure your app run on docker and all the dependencies are included on it
-3. Create a private project and invite "joassouza", "yamanaltereh" once you're done
+3. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
 4. The solution must work with standard input and output (stdin and stdout).
 
 You should provide a solution that make possible to scale because new requirements will come soon.
