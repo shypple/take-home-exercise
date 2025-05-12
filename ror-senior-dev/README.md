@@ -110,6 +110,7 @@ cheapest
 ```
 
 #### (3) TST-0003 - *Acceptance criteria*: Return the fastest sailing legs (direct or indirect) in the same above format
+##### Definition of "fastest": the sailing leg(s) with the shortest total journey time between the origin and destination.
 
 #### Input
 ```json
@@ -148,6 +149,7 @@ fastest
 2. Make sure your app run on docker and all the dependencies are included on it
 3. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
 4. The solution must work with standard input and output (stdin and stdout).
+5. For indirect routes, the solution should handle more than two legs.
 
 You should provide a solution that make possible to scale because new requirements will come soon.
 
