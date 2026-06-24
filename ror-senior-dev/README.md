@@ -1,3 +1,12 @@
+## Using AI
+
+**Use AI — we expect it. We're evaluating how you direct it, not whether you can
+avoid it.**
+
+In the next phase we will ask you to walk us through your solution and explain
+the decisions behind it. You should be able to explain what you did and why —
+candidates who can't explain their own submission will not advance.
+
 ## Background
 
 Shypple is a freight forwarder company. That means we help other companies to
