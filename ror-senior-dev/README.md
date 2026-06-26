@@ -1,3 +1,12 @@
+## Using AI
+
+**Use AI — we expect it. We're evaluating how you direct it, not whether you can
+avoid it.**
+
+In the next phase we will ask you to walk us through your solution and explain
+the decisions behind it. You should be able to explain what you did and why —
+candidates who can't explain their own submission will not advance.
+
 ## Background
 
 Shypple is a freight forwarder company. That means we help other companies to
@@ -145,15 +154,29 @@ fastest
 
 ### Project Requirements
 
-1. Please, create one single branch for all the changes.
-2. Make sure your app run on docker and all the dependencies are included on it
-3. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
-4. The solution must work with standard input and output (stdin and stdout).
-5. For indirect routes, the solution should handle more than two legs.
+1. The solution must be written in Ruby.
+2. Please, create one single branch for all the changes.
+3. Make sure your app run on docker and all the dependencies are included on it
+4. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
+5. The solution must work with standard input and output (stdin and stdout).
+6. For indirect routes, the solution should handle more than two legs.
 
 You should provide a solution that make possible to scale because new requirements will come soon.
 
-4. SLD-0004 - coming soon
+#### (4) SLD-0004 - *Acceptance criteria*: Save a search now, fulfill it later.
+
+A user may search for a route we have no option for yet (no direct or indirect
+path between origin and destination for the given criteria). Instead of simply
+returning an empty result, the system should **save** that search request.
+
+Later, a new MapReduce feed arrives with more sailings. Any previously saved
+search that can **now** be fulfilled should be surfaced back to the user.
+
+It is up to you to decide *how* to persist saved searches and *how* to inform
+the user once a match becomes available (remember: Docker is the only thing we
+can assume is installed). Choose the approach you think best fits the problem
+and **document your assumptions and the trade-offs you considered.**
+
 5. DRY-0005 - coming soon
 6. TDD-0006 - coming soon
 
@@ -179,6 +202,16 @@ between two specific locations, such as from one port to another. For example,
 if a shipment travels from Shanghai to Rotterdam with a stopover in Barcelona,
 the journey consists of two legs: Shanghai to Barcelona and Barcelona to
 Rotterdam.
+
+#### Assumptions & Data Quality
+
+The MapReduce feed is aggregated from multiple upstream providers, so the data is
+not guaranteed to be clean. For example, the same sailing may appear more than
+once with conflicting rates from different feeds — it is up to you to decide which
+one wins and to justify it.
+
+The data and spec are deliberately incomplete in places, as real tickets are.
+Document any assumptions you made and any questions you'd ask the PO.
 
 #### We are here to help
 

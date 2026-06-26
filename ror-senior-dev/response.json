@@ -86,6 +86,11 @@
       "rate_currency": "USD"
     },
     {
+      "sailing_code": "MNOP",
+      "rate": "812.00",
+      "rate_currency": "USD"
+    },
+    {
       "sailing_code": "QRST",
       "rate": "761.96",
       "rate_currency": "EUR"
