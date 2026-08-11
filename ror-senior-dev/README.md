@@ -7,10 +7,12 @@ In the next phase we will ask you to walk us through your solution and explain
 the decisions behind it. You should be able to explain what you did and why —
 candidates who can't explain their own submission will not advance.
 
-Part of that interview is a **PR review**: we go through your code together, ask
-why a class, method or trade-off looks the way it does, and discuss what you
-would change. Expect to defend your design piece by piece, live — there is no
-time to figure out your own code during the session.
+The interview also has a separate **PR review** part. That one is not your
+submission: we give you a pull request on a different codebase, related to this
+exercise, and ask you to review it with us — what you would comment on, what you
+would block, and what you would let go.
+
+Both parts happen live, so expect to read and reason about code out loud.
 
 ## Background
 
