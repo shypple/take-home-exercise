@@ -7,6 +7,11 @@ In the next phase we will ask you to walk us through your solution and explain
 the decisions behind it. You should be able to explain what you did and why —
 candidates who can't explain their own submission will not advance.
 
+Part of that interview is a **PR review**: we go through your code together, ask
+why a class, method or trade-off looks the way it does, and discuss what you
+would change. Expect to defend your design piece by piece, live — there is no
+time to figure out your own code during the session.
+
 ## Background
 
 Shypple is a freight forwarder company. That means we help other companies to
@@ -31,8 +36,8 @@ rate 1.1138 is USD/EUR rate). We decide which exchange_rate will be used to
 calculate EUR sailing rate based on the *departure_date* of the sailing. Use
 sailing_code from sailing & rate to get the rate amount & currency.
 
-Your Product Owner created 3 tickets for you: 3rd task(TST-0003) is a nice to
-have feature. So it is a bonus task & you can finish it if you have time.
+Your Product Owner created 4 tickets for you: PLS-0001, WRT-0002, TST-0003 and
+SLD-0004. All four are required.
 
 The solution should include all configuration files needed to build and run in
 a Docker container (don't expect anything else but Docker to be installed).
@@ -41,7 +46,7 @@ a Docker container (don't expect anything else but Docker to be installed).
 1. The first line is the origin_port code
 2. The second line is the destination_port code
 3. The third line is the criteria (cheapest-direct, cheapest, fastest)
-5. The next lines you should print the result
+4. The next lines you should print the result
 
 #### Input
 ```json
@@ -152,17 +157,6 @@ fastest
 ]
 ```
 
-### Project Requirements
-
-1. The solution must be written in Ruby.
-2. Please, create one single branch for all the changes.
-3. Make sure your app run on docker and all the dependencies are included on it
-4. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
-5. The solution must work with standard input and output (stdin and stdout).
-6. For indirect routes, the solution should handle more than two legs.
-
-You should provide a solution that make possible to scale because new requirements will come soon.
-
 #### (4) SLD-0004 - *Acceptance criteria*: Save a search now, fulfill it later.
 
 A user may search for a route we have no option for yet (no direct or indirect
@@ -177,8 +171,20 @@ the user once a match becomes available (remember: Docker is the only thing we
 can assume is installed). Choose the approach you think best fits the problem
 and **document your assumptions and the trade-offs you considered.**
 
-5. DRY-0005 - coming soon
-6. TDD-0006 - coming soon
+#### (5) DRY-0005 - coming soon
+
+#### (6) TDD-0006 - coming soon
+
+### Project Requirements
+
+1. The solution must be written in Ruby.
+2. Please, create one single branch for all the changes.
+3. Make sure your app run on docker and all the dependencies are included on it
+4. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
+5. The solution must work with standard input and output (stdin and stdout).
+6. For indirect routes, the solution should handle more than two legs.
+
+You should provide a solution that make possible to scale because new requirements will come soon.
 
 We will evaluate the solution with some criteria:
 
