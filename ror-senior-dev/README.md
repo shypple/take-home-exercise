@@ -182,7 +182,7 @@ and **document your assumptions and the trade-offs you considered.**
 1. The solution must be written in Ruby.
 2. Please, create one single branch for all the changes.
 3. Make sure your app run on docker and all the dependencies are included on it
-4. Please send a zip file with the solution to this email address, j.souza@shypple.com, once you're done.
+4. Please send a zip file with the solution to this email address, j.souza@shypple.com and n.vannederpelt@shypple.com, once you're done.
 5. The solution must work with standard input and output (stdin and stdout).
 6. For indirect routes, the solution should handle more than two legs.
 
